@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pro Support</title>
+    <link rel="stylesheet" href="proSupport.css">
+    <script src="https://kit.fontawesome.com/c69827d687.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="logo v-class-resp">
+            <img src="./images/logo.png" alt="Pro Support Logo">
+        </div>
+        <nav class="navbar">
+            <div class="h-nav-resp">
+                <ul class="nav-list v-class-resp">
+                    <div class="navv">
+                        <li><a href="#top-page" id="top-page-link" class="nav-link ">Top page</a></li>
+                        <li><a href="#company-profile" id="company-profile-link" class="nav-link ">Company Profile</a></li>
+                        <li><a href="#management-policy" id="management-policy-link" class="nav-link">Management Policy</a></li>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+        <div class="language v-class-resp"></div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </header>
+    
+    <main>
+        <div id="top-page" class="content">
+            <div class="text-section">
+                <p>
+                    We will propose suitable personnel for various human resource needs of customers. We carefully follow up with companies and dispatched employees. Because we follow up carefully, the following problems that are common in foreign dispatch are unlikely to occur.
+                    Communication is the most common reason why dispatched staff quit soon. They get tired of their work because they do not improve. They are isolated because they cannot communicate well with employees and colleagues. They are dissatisfied with the workplace or have something to say but cannot say it. All of these are caused by a lack of communication. We carefully follow up with dispatched staff, such as individual counseling, and create an environment where dispatched staff can always approach their work with a smile. We also carefully follow up with companies, so if you have any requests or dissatisfaction with dispatched staff, such as language barriers, please feel free to tell our staff. We will promptly resolve language problems in each country and convey your company's requests to dispatched staff.
+                </p>
+                <button class="dispatch" onclick="toggleJobForm()">Request a dispatch here</button>
+                <button class="job-search" onclick="toggleDispatchForm()" >Search job here</button>
+            </div>
+            <div class="image-section">
+                <img src="./images/img.jpeg.jpg" alt="Company Image" >
+            </div>
+        </div>
+        
+        <div id="company-profile" class="container">
+            <div class="image-section">
+                <img src="./images/profile.jpg" alt="Company Image">
+            </div>
+            <div class="text-section">
+                <h2>Company Profile</h2>
+                <p>
+                    Company name: Pro Support Co., Ltd.<br>
+                    Representative: Masami Oshima, CEO <br>
+                    Capital: 25 million yen<br>
+                    Business: Temporary staffing, contract work, and consulting<br>
+                    License number: Temporary staffing 10-300722 
+                    Registered support organization 22-007347
+                    Paid job placement business 10-Yu-300463
+                    Head office location: 1-16-1 Owatari-cho, Maebashi-shi, 371-0854 Okusi-Maebashi, 1-A<br>
+                    Bank: Ashikaga Bank, Maebashi Branch Gunma Bank, Head Office Sales Department<br>
+                </p>
+            </div>
+        </div>
+        <div id="management-policy" class="container1">
+            <div class="image-section">
+                <img src="./images/policy.jpg" alt="Management Policy Image">
+            </div>
+            <div class="text-section">
+                <h2>Management Policy</h2>
+                <p>
+                    We will contribute to the local community by fulfilling our social role as a human resources business
+                    in order to create a rich society and a better future. We will always spare no effort to increase the
+                    satisfaction of both human resources and companies, aiming to bring smiles to as many people as possible.
+                </p>
+            </div>
+        </div>
+
+        <div id="dispatch-form" class="form-container" style="display: none;">
+           
+            <h2>Work Enquiries Form</h2>
+            <form>
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Name">
+                </div>
+                <div class="form-group">
+                    <input type="text" id="driversLicense" name="driversLicense" placeholder="Driver's License (Required)">
+                </div>
+                <div class="form-group">
+                    <input type="text" id="phoneNumber" name="phoneNumber" placeholder="Phone Number (Required)">
+                </div>
+                <div class="form-group">
+                    <input type="email" id="emailAddress" name="emailAddress" placeholder="Email Address (Required)">
+                </div>
+                <div class="form-group">
+                    <input type="text" id="city" name="city" placeholder="City (Required)">
+                </div>
+                <p class="privacy-info">
+                    Regarding the Handling of Personal Information: We will never handle personal information beyond the scope necessary to achieve our business objectives, such as temporary staffing, without the consent of the individual.
+                </p>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+            <br>
+        <div id="job-form" class="form-container1" style="display: none;">
+           
+            <h2>Please fill out the form below. We will contact you within one business day after confirming the details.</h2>
+            <form>
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="text" id="jobType" name="jobType" placeholder="Job Type">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="companyName" name="companyName" placeholder="Company Name">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="text" id="location" name="location" placeholder="Location">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="personInCharge" name="personInCharge" placeholder="Person in Charge">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="text" id="phoneNumber" name="phoneNumber" placeholder="Phone Number">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="emailAddress" name="emailAddress" placeholder="Email Address">
+                    </div>
+                </div>
+                <h3>Contact Information</h3>
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="text" id="contactPersonInCharge" name="contactPersonInCharge" placeholder="Person in Charge">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="contactPhoneNumber" name="contactPhoneNumber" placeholder="Phone Number">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="email" id="contactEmailAddress" name="contactEmailAddress" placeholder="Email Address">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Message"></textarea>
+                    </div>
+                </div>
+                <h3>Agreement Section</h3>
+                <div class="agreement">
+                    <input type="checkbox" id="agreement" name="agreement">
+                    <label for="agreement">I agree to the Terms of Use and Privacy Policy.</label>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <section class="contact-info">
+            <div class="info-box">
+                <div class="icon">
+                    <img src="./images/contact.jpg" alt="Contact Icon">
+                </div>
+                <div class="text">
+                    <h3>Contact</h3>
+                    <p> Phone: 027-289-0762</p>
+                    <p> Fax: 027-289-0776</p>
+
+                </div>
+            </div>
+            <div class="info-box">
+                <div class="icon">
+                    <img src="./images/hours.jpg" alt="Hours Icon">
+                </div>
+                <div class="text">
+                    <h3>Our Hours</h3>
+                    <p>Monday–Friday</p>
+                    <p>9:00 AM – 6:00 PM</p>
+                </div>
+            </div>
+            <div class="info-box">
+                <div class="icon">
+                    <img src="./images/location.jpg" alt="Location Icon">
+                </div>
+                <div class="text">
+                    <h3>Location</h3>
+                    <p>〒371-0854<br/>
+                    1-16-1 Owatari-cho, Maebashi City, Okusi-Maebashi, 1-A
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="process">
+            <h2>The process from requesting a dispatch job to <br/>introducing a new employee</h2><br/>
+            <div class="steps">
+                <div class="step">
+                    <div class="circle">1</div>
+                    <p>Our sales representative will visit you to discuss and hear about the type of personnel you are looking for.</p>
+                </div>
+                <div class="step">
+                    <div class="circle">2</div>
+                    <p>Our sales representative will visit you to discuss and hear about the type of personnel you are looking for.</p>
+                </div>
+                <div class="step">
+                    <div class="circle">3</div>
+                    <p>Workplace tour staff will tour the workplace before starting work to eliminate any mismatches after starting work.</p>
+                </div>
+                <div class="step">
+                    <div class="circle">4</div>
+                    <p>Start of work. You will start work in the company of our sales representative.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    
+    
+    <footer>
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Inquiry</h3>
+            
+          </div>
+
+          <div class="textt">
+            <button class="btns">
+                <i class="fas fa-phone "></i> 027-289-0762
+            </button>
+            <button class="btns">
+                <i class="fas fa-envelope"></i> s.pro41@yahoo.com
+            </button>
+        </div>
+        <div class="copyright">
+          <p>Information on margin rates etc.<br/><br/>
+            Copyright 2024 Pro Support</p>
+        </div>
+      </footer>
+</body>
+
+<script>
+    const burger = document.querySelector('.burger');
+    const navbar = document.querySelector('.navbar');
+    const navList = document.querySelector('.nav-list');
+    const language = document.querySelector('.language');
+    const logo = document.querySelector('.logo');
+
+    burger.addEventListener('click', ()=>{
+        navbar.classList.toggle('expanded');
+        navList.classList.toggle('v-class-resp');
+        language.classList.toggle('language');
+        logo.classList.toggle('v-class-resp');
+    });
+    function toggleJobForm() {
+        const jobForm = document.getElementById('job-form');
+        if (jobForm.style.display === 'none') {
+            jobForm.style.display = 'block';
+            jobForm.scrollIntoView({
+                behavior: 'smooth'
+            });
+        } else {
+            jobForm.style.display = 'none';
+        }
+    }
+        
+
+    function toggleDispatchForm() {
+    const dispatchForm = document.getElementById('dispatch-form');
+    if (dispatchForm.style.display === 'none') {
+        dispatchForm.style.display = 'block';
+        dispatchForm.scrollIntoView({
+            behavior: 'smooth'
+        });
+    } else {
+        dispatchForm.style.display = 'none';
+    }
+}
+
+
+  
+
+
+</script>
+
+</html>
